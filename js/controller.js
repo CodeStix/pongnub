@@ -84,9 +84,9 @@ var initTouchers = function(name, pubnub) {
     document.addEventListener("touchend", function(e) {touchHandler(e);}, false);
     document.addEventListener("touchleave", function(e) {touchHandler(e);}, false);
     document.addEventListener("touchcancel", function(e) {touchHandler(e);}, false);
-    document.addEventListener("mousedown", function(e) {touchHandler(e);}, false);
-    document.addEventListener("mouseup", function(e) {touchHandler(e);}, false);
-    document.addEventListener("mouseleave", function(e) {touchHandler(e);}, false);
+    // document.addEventListener("mousedown", function(e) {touchHandler(e);}, false);
+    // document.addEventListener("mouseup", function(e) {touchHandler(e);}, false);
+    // document.addEventListener("mouseleave", function(e) {touchHandler(e);}, false);
 
     $(document).keydown(function(e) {
       if (e.which == "40") touchHandler({target: {id : "down"}, type: "mousedown" });
